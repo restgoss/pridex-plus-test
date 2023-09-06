@@ -1,0 +1,50 @@
+.setscore {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 20px);
+    max-width: 450px;
+    justify-content: space-evenly;
+    padding: 35px 0 55px 0;
+}
+
+.setscore__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.setscore__button:hover {
+    cursor: pointer;
+}
+
+.setscore__button_active_a {
+    background-color: #0088FF;
+    color: #fff;
+}
+
+.setscore__button_active_b {
+    background-color: #00C2FF;
+    color: #fff;
+}
+
+.setscore__button_active_c {
+    background-color: #0093E2;
+    color: #fff;
+}
+
+.setscore__button_active_d {
+    background-color: #0088FF;
+    color: #fff;
+}
+
+.setscore__button_active_e {
+    background-color: #BEBEBE;
+    color: #fff;
+}
+
+@media screen and (max-width: 360px) {
+    .setscore__button {
+        width: 40px;
+        height: 40px;
+    }
+}

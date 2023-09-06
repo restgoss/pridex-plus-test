@@ -1,0 +1,34 @@
+.menu-slider {
+    width: calc(100% - 20px);
+    margin-top: 35px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-slider__item {
+    font-family: inherit;
+    font-size: 14px;
+    display: flex;
+    width: 175px;
+    height: 45px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #D9D9D9;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.menu-slider__item_active {
+    background-color: #000;
+    color: #fff;
+    cursor: default;
+}
+
+@media screen and (max-width: 390px) {
+    .menu-slider__item {
+        width: calc(100% - 20px);
+    } 
+}

@@ -1,0 +1,29 @@
+.your__score {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px);
+    align-items: center;
+    padding: 25px 0 25px 0;
+}
+
+.your__name {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.your__comment {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 320px) {
+    .your__name { 
+        font-size: 14px;
+    }  
+
+    .your__comment {
+        font-size: 14px;
+    }
+}

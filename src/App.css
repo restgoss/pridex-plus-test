@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Circe";
+  src: url(./utils/fonts/Circe-Regular.woff) format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url(./utils/fonts/Circe-Bold.woff) format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url(./utils/fonts/Circe-Light.woff) format("woff");
+  font-weight: 100;
+}
+
+.circe {
+  font-family: "Circe";
+}
+
+.App {
+  font-family: "Circe";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
