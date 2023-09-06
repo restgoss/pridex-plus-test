@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "./static/css/main.d926e905.css",
-    "main.js": "./static/js/main.083f99aa.js",
-    "static/media/Circe-Light.woff": "./static/media/Circe-Light.0a23696bc00e1131f434.woff",
-    "static/media/Circe-Bold.woff": "./static/media/Circe-Bold.8a1c4d2d35cdd2d6704b.woff",
-    "static/media/Circe-Regular.woff": "./static/media/Circe-Regular.b3583e41e063203a7e74.woff",
-    "static/media/avatar_director.jpg": "./static/media/avatar_director.17003aeb88e24c1b86ee.jpg",
-    "static/media/pridex_black.svg": "./static/media/pridex_black.d4bd0f39f948ff960045470d8f9b09fa.svg",
-    "static/media/phone_icon.svg": "./static/media/phone_icon.5ce4701ce6cc4c10056be1fdc95bdce8.svg",
-    "static/media/sms_icon.svg": "./static/media/sms_icon.b94280b90ef4a74db0ee577187e04757.svg",
-    "static/media/avatar.svg": "./static/media/avatar.64c66a5283ffe60132922cc25a2f6c13.svg",
-    "index.html": "./index.html",
-    "static/media/menu_button_active.svg": "./static/media/menu_button_active.6b42379522d22b497b70.svg",
-    "static/media/menu_button.svg": "./static/media/menu_button.9cc34115d6353606d9b1.svg",
-    "main.d926e905.css.map": "./static/css/main.d926e905.css.map",
-    "main.083f99aa.js.map": "./static/js/main.083f99aa.js.map"
+    "main.css": "/firstwebapp/static/css/main.1c9196c4.css",
+    "main.js": "/firstwebapp/static/js/main.a1cc316a.js",
+    "static/media/Circe-Light.woff": "/firstwebapp/static/media/Circe-Light.0a23696bc00e1131f434.woff",
+    "static/media/Circe-Bold.woff": "/firstwebapp/static/media/Circe-Bold.8a1c4d2d35cdd2d6704b.woff",
+    "static/media/Circe-Regular.woff": "/firstwebapp/static/media/Circe-Regular.b3583e41e063203a7e74.woff",
+    "static/media/avatar_director.jpg": "/firstwebapp/static/media/avatar_director.17003aeb88e24c1b86ee.jpg",
+    "static/media/pridex_black.svg": "/firstwebapp/static/media/pridex_black.d4bd0f39f948ff960045470d8f9b09fa.svg",
+    "static/media/phone_icon.svg": "/firstwebapp/static/media/phone_icon.5ce4701ce6cc4c10056be1fdc95bdce8.svg",
+    "static/media/sms_icon.svg": "/firstwebapp/static/media/sms_icon.b94280b90ef4a74db0ee577187e04757.svg",
+    "static/media/avatar.svg": "/firstwebapp/static/media/avatar.64c66a5283ffe60132922cc25a2f6c13.svg",
+    "index.html": "/firstwebapp/index.html",
+    "static/media/menu_button_active.svg": "/firstwebapp/static/media/menu_button_active.6b42379522d22b497b70.svg",
+    "static/media/menu_button.svg": "/firstwebapp/static/media/menu_button.9cc34115d6353606d9b1.svg",
+    "main.1c9196c4.css.map": "/firstwebapp/static/css/main.1c9196c4.css.map",
+    "main.a1cc316a.js.map": "/firstwebapp/static/js/main.a1cc316a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d926e905.css",
-    "static/js/main.083f99aa.js"
+    "static/css/main.1c9196c4.css",
+    "static/js/main.a1cc316a.js"
   ]
 }
