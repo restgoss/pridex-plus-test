@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pridex-plus-test/static/css/main.73cbab8b.css",
+    "main.css": "/pridex-plus-test/static/css/main.df70b4fe.css",
     "main.js": "/pridex-plus-test/static/js/main.dd815fbb.js",
     "static/media/Circe-Light.woff": "/pridex-plus-test/static/media/Circe-Light.0a23696bc00e1131f434.woff",
     "static/media/Circe-Bold.woff": "/pridex-plus-test/static/media/Circe-Bold.8a1c4d2d35cdd2d6704b.woff",
@@ -13,11 +13,11 @@
     "index.html": "/pridex-plus-test/index.html",
     "static/media/menu_button_active.svg": "/pridex-plus-test/static/media/menu_button_active.6b42379522d22b497b70.svg",
     "static/media/menu_button.svg": "/pridex-plus-test/static/media/menu_button.9cc34115d6353606d9b1.svg",
-    "main.73cbab8b.css.map": "/pridex-plus-test/static/css/main.73cbab8b.css.map",
+    "main.df70b4fe.css.map": "/pridex-plus-test/static/css/main.df70b4fe.css.map",
     "main.dd815fbb.js.map": "/pridex-plus-test/static/js/main.dd815fbb.js.map"
   },
   "entrypoints": [
-    "static/css/main.73cbab8b.css",
+    "static/css/main.df70b4fe.css",
     "static/js/main.dd815fbb.js"
   ]
 }
