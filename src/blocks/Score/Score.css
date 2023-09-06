@@ -2,9 +2,15 @@
     font-size: 18px;
     width: 40px;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #fff;
     font-family: inherit;
     font-weight: 700;
@@ -18,11 +24,17 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border: 3px solid #0088FF;
     color: #0088FF;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* background-color: #0088FF;  */
 }
 
@@ -31,11 +43,17 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border: 3px solid #00C2FF;
     color: #00C2FF;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* background-color: #00C2FF; */
 }
 
@@ -44,11 +62,17 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border: 3px solid #0093E2;
     color: #0093E2;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* background-color: #0093E2; */
 }
 
@@ -57,11 +81,17 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border: 3px solid #0088FF;
     color: #0088FF;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* background-color: #0088FF;   */
 }
 
@@ -70,17 +100,25 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border: 3px solid #BEBEBE;
     color: #BEBEBE;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* background-color: #BEBEBE; */
 }
 
 @media screen and (max-width: 420px) {
 
     .score{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         margin: 0 10px 0 10px;

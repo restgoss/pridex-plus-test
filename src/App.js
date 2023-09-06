@@ -12,7 +12,7 @@ function App() {
   const navigate = useNavigate();
   function submitForm(e) {
     setLoggedin(true);
-    navigate('/');
+    navigate('/profile');
     console.log(isLoggedin);
   }
 
@@ -29,7 +29,7 @@ function App() {
           }
         />
         <Route
-          path='/'
+          path='/profile'
           element={
             <>
               <Header isLoggedin={true} />
@@ -39,7 +39,7 @@ function App() {
         />
         <Route
           path="*"
-          element={<Navigate to={isLoggedin ? "/" : "/sign-in"} />}
+          element={<Navigate to={isLoggedin ? "/profile" : "/sign-in"} />}
         />
 
         <Route
