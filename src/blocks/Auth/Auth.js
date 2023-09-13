@@ -1,5 +1,5 @@
 import './Auth.css';
-import sms_icon from '../../utils/images/sms_icon.svg';
+import password from '../../utils/images/password.svg';
 import phone_icon from '../../utils/images/phone_icon.svg';
 
 export default function Auth(props) {
@@ -13,12 +13,12 @@ export default function Auth(props) {
                 <form className="auth-form">
                     <div className="auth-form__row">
                         <img className="auth-form__symbol" src={phone_icon}></img>
-                        <input className="auth-form__input" placeholder="Номер телефона" type="tel">
+                        <input className="auth-form__input" placeholder="Логин" type="tel">
                         </input>
                     </div>
                     <div className="auth-form__row">
-                        <img className="auth-form__symbol" src={sms_icon}></img>
-                        <input className="auth-form__input" placeholder="Код подтверждения">
+                        <img className="auth-form__symbol" src={password} style={{opacity: '.5'}}></img>
+                        <input className="auth-form__input" placeholder="Пароль">
                         </input>
                     </div>
                     <button className="auth-form__button" type='button' onClick={props.onClick}>Войти</button>

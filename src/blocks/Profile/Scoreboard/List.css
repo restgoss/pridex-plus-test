@@ -9,18 +9,15 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     height: 55px;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color .3s ease-in-out;
 }
 
 .li:hover {
     cursor: pointer;
+    background-color: #D9D9D9;
 }
 
 .li p {
@@ -41,6 +38,19 @@
     margin-left: 25px;
 }
 
+.arrow {
+    width: 25px;
+    height: 25px;
+}
+
+.arrow-block {
+    display: flex;
+    margin-right: 25px;
+}
+
+.arrow-block p {
+    margin: 0 15px 0 0;
+}
 
 
 @media screen and (max-width: 420px) {
@@ -52,5 +62,13 @@
 
     .li p {
         margin-left: 10px;
+    }
+
+    .arrow-block p {
+        margin-right: 5px;
+    }
+
+    .arrow-block {
+        margin-right: 10px;
     }
 }

@@ -57,3 +57,13 @@ const resultObjects = [
 ];
 
 export default resultObjects;
+
+const arrayOfScores = [
+    {
+        section: 'Личная результативность'
+
+    }
+
+
+
+];

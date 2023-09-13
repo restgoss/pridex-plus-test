@@ -31,12 +31,23 @@
     -ms-flex-line-pack: center;
         align-content: center;
     cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.menu-slider__item:hover {
+    background-color: #bbbbbb;
 }
 
 .menu-slider__item_active {
     background-color: #000;
     color: #fff;
     cursor: default;
+}
+
+.menu-slider__item_active:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: default; 
 }
 
 @media screen and (max-width: 390px) {
