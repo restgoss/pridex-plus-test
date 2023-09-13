@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/pridex-plus-test/static/css/main.38ec1d7f.css",
-    "main.js": "/pridex-plus-test/static/js/main.dd815fbb.js",
+    "main.css": "/pridex-plus-test/static/css/main.0363bcb7.css",
+    "main.js": "/pridex-plus-test/static/js/main.bc5de936.js",
     "static/media/Circe-Light.woff": "/pridex-plus-test/static/media/Circe-Light.0a23696bc00e1131f434.woff",
     "static/media/Circe-Bold.woff": "/pridex-plus-test/static/media/Circe-Bold.8a1c4d2d35cdd2d6704b.woff",
     "static/media/Circe-Regular.woff": "/pridex-plus-test/static/media/Circe-Regular.b3583e41e063203a7e74.woff",
+    "static/media/avatar.jfif": "/pridex-plus-test/static/media/avatar.812d73aed48fab6fe83e.jfif",
     "static/media/avatar_director.jpg": "/pridex-plus-test/static/media/avatar_director.17003aeb88e24c1b86ee.jpg",
-    "static/media/pridex_black.svg": "/pridex-plus-test/static/media/pridex_black.d4bd0f39f948ff960045470d8f9b09fa.svg",
-    "static/media/phone_icon.svg": "/pridex-plus-test/static/media/phone_icon.5ce4701ce6cc4c10056be1fdc95bdce8.svg",
-    "static/media/sms_icon.svg": "/pridex-plus-test/static/media/sms_icon.b94280b90ef4a74db0ee577187e04757.svg",
-    "static/media/avatar.svg": "/pridex-plus-test/static/media/avatar.64c66a5283ffe60132922cc25a2f6c13.svg",
+    "static/media/pridex_black.svg": "/pridex-plus-test/static/media/pridex_black.a1ceef361e5e5b75bce94a132a2c2858.svg",
+    "static/media/phone_icon.svg": "/pridex-plus-test/static/media/phone_icon.49b92d46e05ce7a79592a0065f1b009e.svg",
+    "static/media/password.svg": "/pridex-plus-test/static/media/password.0eee5b8658e9f6d89a3f6b843fd87125.svg",
+    "static/media/avatar.svg": "/pridex-plus-test/static/media/avatar.542dd32d1d2cf688f829a6682234ff82.svg",
     "index.html": "/pridex-plus-test/index.html",
-    "static/media/menu_button_active.svg": "/pridex-plus-test/static/media/menu_button_active.6b42379522d22b497b70.svg",
-    "static/media/menu_button.svg": "/pridex-plus-test/static/media/menu_button.9cc34115d6353606d9b1.svg",
-    "main.38ec1d7f.css.map": "/pridex-plus-test/static/css/main.38ec1d7f.css.map",
-    "main.dd815fbb.js.map": "/pridex-plus-test/static/js/main.dd815fbb.js.map"
+    "static/media/arrow.svg": "/pridex-plus-test/static/media/arrow.b7fd07edd5b4b07629f8185b7f841d04.svg",
+    "static/media/menu_button_active.svg": "/pridex-plus-test/static/media/menu_button_active.07f150a0318afec6584e.svg",
+    "static/media/menu_button.svg": "/pridex-plus-test/static/media/menu_button.1cd6a4ad6f766233e757.svg",
+    "main.0363bcb7.css.map": "/pridex-plus-test/static/css/main.0363bcb7.css.map",
+    "main.bc5de936.js.map": "/pridex-plus-test/static/js/main.bc5de936.js.map"
   },
   "entrypoints": [
-    "static/css/main.38ec1d7f.css",
-    "static/js/main.dd815fbb.js"
+    "static/css/main.0363bcb7.css",
+    "static/js/main.bc5de936.js"
   ]
 }
