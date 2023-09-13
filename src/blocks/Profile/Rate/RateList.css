@@ -1,0 +1,5 @@
+.rate-list {
+    width: calc(100% - 45px);
+    overflow: auto;
+    max-height: 550px;
+}

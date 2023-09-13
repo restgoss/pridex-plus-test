@@ -10,7 +10,7 @@ export default function ProfileButton() {
     return (
         <div className='button' onClick={toQuiz}>
             <div className='button__alert'>!</div>
-            К анкете
+            Необходимо пройти оценку
         </div>
     )
 }

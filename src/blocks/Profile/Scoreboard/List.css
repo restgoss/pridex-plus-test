@@ -1,7 +1,11 @@
+
+
 .ul {
-    width: calc(100% - 40px);
+    width: calc(100% - 45px);
     padding: 0;
     margin: 0;
+    max-height: 500px;
+    overflow: auto;
 }
 
 .li {
@@ -36,20 +40,6 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 25px;
-}
-
-.arrow {
-    width: 25px;
-    height: 25px;
-}
-
-.arrow-block {
-    display: flex;
-    margin-right: 25px;
-}
-
-.arrow-block p {
-    margin: 0 15px 0 0;
 }
 
 
