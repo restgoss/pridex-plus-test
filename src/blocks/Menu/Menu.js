@@ -7,7 +7,7 @@ function signOut() {
 }
 
 function toProfile() {
-    navigate('/');
+    navigate('/profile');
 }
 
 return(
@@ -17,10 +17,7 @@ return(
         <li className="menu__item" onClick={toProfile}>Профиль</li>
         <li className="menu__item" onClick={signOut}>Выйти</li>
     </ul>
-    
-    
-    
-    
+
     </>
 )
 

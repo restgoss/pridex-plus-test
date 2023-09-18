@@ -11,6 +11,10 @@
     font-family: "Circe";
 }
 
+.quiz__input:focus {
+    outline: none;
+}
+
 
 .quiz__input_active {
     border: 1px solid #DD0000BF;
@@ -25,4 +29,9 @@
 
 .quiz__error_active {
     visibility: visible;
+}
+
+.quiz__paragraph {
+    font-family: inherit;
+    margin-bottom: 25px;
 }

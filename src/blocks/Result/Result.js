@@ -9,7 +9,7 @@ export default function Result() {
     const [selectedObject, setSelectedobject] = React.useState(0);
     const navigate = useNavigate();
     function goBack() {
-        navigate('/')
+        navigate('/profile')
     }
     return (
         <>
@@ -21,6 +21,4 @@ export default function Result() {
             </div>
         </>
     )
-
-
 }

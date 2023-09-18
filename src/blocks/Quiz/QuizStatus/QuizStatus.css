@@ -1,0 +1,27 @@
+.quiz-status__block {
+    margin: 35px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    width: 225px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.quiz-status__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.quiz-status__button:hover {
+    cursor: pointer;
+}
+
+.quiz-status__button_active{
+    background-color: #000;
+    color: #fff;
+}

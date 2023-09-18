@@ -1,0 +1,46 @@
+.page-switch__buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-switch__arrow {
+    transition: opacity .3s ease-in-out;
+}
+
+.page-switch__arrow:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.page-switch {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-switch__buttons {
+    margin: 0 10px 0 10px;
+}
+
+.page-switch__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transition: opacity .3s ease-in-out;
+}
+
+.page-switch__button:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.page-switch__button_active {
+    background-color: #D9D9D9;
+}
+
+.page-switch__button_active:hover {
+    background-color: #D9D9D9;
+    cursor: default;
+    opacity: 1;
+}

@@ -7,6 +7,7 @@ import Profile from './blocks/Profile/Profile';
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import Result from './blocks/Result/Result';
 import Quiz from './blocks/Quiz/Quiz';
+import EmployeeSearch from './pages/EmployeeSearch';
 function App() {
   const [isLoggedin, setLoggedin] = React.useState(false);
   const navigate = useNavigate();
@@ -60,7 +61,16 @@ function App() {
               <Quiz />
             </>
           }
+        />
 
+        <Route 
+          path='/employee-search'
+          element={
+            <>
+              <Header isLoggedin={true} />
+              <EmployeeSearch />
+            </>
+          }
         />
 
       </Routes>
