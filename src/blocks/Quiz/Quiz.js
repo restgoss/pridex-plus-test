@@ -22,7 +22,7 @@ import { useNavigate } from 'react-router-dom';
         <>
             <QuizStatus status={quizState} />
             <div className="quiz">
-                <img className='quiz__close-btn' src={cross} onClick={goToProfile}></img>
+                <img className='quiz__close-btn' src={cross} onClick={goToProfile} alt=''></img>
                 <h2 className='quiz__title'>Личная результативность</h2>
                 <SetScore setParentState={setScoreState} />
                 <Input error={scoreState === 'a' || scoreState === 'b' || scoreState === 'c' ? true : false} />

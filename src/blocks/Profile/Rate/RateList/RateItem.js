@@ -9,7 +9,7 @@ export default function RateItem(props) {
                 <p className="rate__post">{props.post}</p>
                 
             </div>
-            {props.needsAttention ? <img className='rate__image' src={warning} /> : <img className='rate__image' src={arrow} /> }
+            {props.needsAttention ? <img className='rate__image' src={warning} alt='' /> : <img className='rate__image' src={arrow} alt='' /> }
         </div>
     )
 }

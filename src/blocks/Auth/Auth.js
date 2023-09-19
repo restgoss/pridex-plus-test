@@ -8,12 +8,12 @@ export default function Auth(props) {
                 <h2 className='auth-block__title'>Войти</h2>
                 <form className="auth-form">
                     <div className="auth-form__row">
-                        <img className="auth-form__symbol" src={phone_icon}></img>
+                        <img className="auth-form__symbol" src={phone_icon} alt='' ></img>
                         <input className="auth-form__input" placeholder="Логин" type="tel">
                         </input>
                     </div>
                     <div className="auth-form__row">
-                        <img className="auth-form__symbol" src={password} style={{ opacity: '.5' }}></img>
+                        <img className="auth-form__symbol" src={password} style={{ opacity: '.5' }} alt='' ></img>
                         <input className="auth-form__input" placeholder="Пароль">
                         </input>
                     </div>

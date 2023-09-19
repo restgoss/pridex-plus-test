@@ -17,7 +17,6 @@ return(
         <li className="menu__item" onClick={toProfile}>Профиль</li>
         <li className="menu__item" onClick={signOut}>Выйти</li>
     </ul>
-
     </>
 )
 

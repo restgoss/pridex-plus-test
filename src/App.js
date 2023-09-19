@@ -4,80 +4,111 @@ import Auth from './blocks/Auth/Auth';
 import Header from './blocks/Header/Header';
 import Profile from './blocks/Profile/Profile';
 import { Routes, Route, Navigate, useNavigate, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from 'framer-motion';
 import Result from './blocks/Result/Result';
 import Quiz from './blocks/Quiz/Quiz';
 import EmployeeSearch from './pages/EmployeeSearch';
 function App() {
   const [isLoggedin, setLoggedin] = React.useState(false);
   const navigate = useNavigate();
-  const location = useLocation();
   function submitForm(e) {
     setLoggedin(true);
     navigate('/profile');
   }
-  
-  
-  return (
-    <div className="App">
-      <Routes location={location}>
-        <Route
-          path='/sign-in'
-          element={
-            <>
-              <Header isLoggedin={false} />
-              <Auth onClick={submitForm} />
-            </>
-          }
-        />
-        <Route
-          path='/profile'
-          element={
-            <>
-              <Header isLoggedin={true} />
-              <Profile />
-            </>
-          }
-        />
-        <Route
-          path="*"
-          element={<Navigate to={isLoggedin ? "/profile" : "/sign-in"} />}
-        />
 
-        <Route
-          path='/your-score/1'
-          element={
-            <>
-              <Header isLoggedin={true} />
-              <Result />
-            </>
-          }
-        />
+  const PageTransition = (props) => {
+    return (
+      <motion.div
+        {...props}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', height: '100%', ease: 'easeInOut' }}
+        transition={{ type: 'spring', duration: .6 }}
+      >
+        {props.children}
+      </motion.div>
+    )
+  }
 
-        <Route
-          path='/quiz'
-          element={
-            <>
-              <Header isLoggedin={true} />
-              <Quiz />
-            </>
-          }
-        />
+  const AuthPage = (props) => {
+    return (
+      <>
+        <Header isLoggedin={false} />
+        <PageTransition>
+          <Auth onClick={submitForm} />
+        </PageTransition>
+      </>
+    )
+  }
 
-        <Route 
-          path='/employee-search'
-          element={
-            <>
-              <Header isLoggedin={true} />
-              <EmployeeSearch />
-            </>
-          }
-        />
+  const ProfilePage = (props) => {
+    return (
+      <>
+        <Header isLoggedin={true} />
+        <PageTransition>
+          <Profile />
+        </PageTransition>
+      </>
+    )
+  }
 
-      </Routes>
+  const YourScorePage = (props) => {
+    return (
+      <>
+      <Header isLoggedin={true} />
+      <PageTransition>
+        <Result />
+      </PageTransition>
+      </>
+    )
+  }
 
+  const QuizPage = (props) => {
+    return (
+      <>
+      <Header isLoggedin={true} />
+      <PageTransition>
+        <Quiz />
+      </PageTransition>
+      </>
+    )
+  }
 
-    </div>
-  );
+  const SearchPage = (props) => {
+    return (
+      <>
+      <Header isLoggedin={true} />
+      <PageTransition>
+        <EmployeeSearch />
+      </PageTransition>
+      </>
+    )
+  }
+
+  const AnimatedRoutes = () => {
+    const location = useLocation();
+    return (
+      <AnimatePresence>
+        <div className="App">
+          <Routes location={location}>
+            <Route path='/sign-in' element={<AuthPage />} />
+            <Route path='/profile' element={<ProfilePage />} />
+            <Route path="*" element={<Navigate to={isLoggedin ? "/profile" : "/sign-in"} />} />
+            <Route
+              path='/your-score/1'
+              element={<YourScorePage />}
+            />
+            <Route path='/quiz' element={<QuizPage />} />
+            <Route path='/employee-search' element={<SearchPage />} />
+          </Routes>
+        </div>
+      </AnimatePresence>
+    );
+  }
+
+  return (<AnimatedRoutes />)
+
 }
 
 export default App;

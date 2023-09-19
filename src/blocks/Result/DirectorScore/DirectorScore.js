@@ -1,6 +1,4 @@
 import './DirectorScore.css';
-import avatar from '../../../utils/images/avatar_director.jpg';
-
 export default function DirectorScore({comment, director, avatar}) {
     return(
         <>

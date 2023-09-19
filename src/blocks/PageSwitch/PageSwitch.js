@@ -5,7 +5,7 @@ export default function PageSwitch() {
     return (
         <>
             <div className="page-switch">
-                <img className="page-switch__arrow" src={arrowleft}>
+                <img className="page-switch__arrow" src={arrowleft} alt=''>
                 </img>
                 <div className="page-switch__buttons">
                     <div className="page-switch__button page-switch__button_active">1</div>
@@ -15,7 +15,7 @@ export default function PageSwitch() {
                     <div className="page-switch__button">5</div>
                     <div className="page-switch__button">6</div>
                 </div>
-                <img className="page-switch__arrow" src={arrowright}>
+                <img className="page-switch__arrow" src={arrowright} alt=''>
                 </img>
             </div>
         </>
