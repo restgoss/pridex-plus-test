@@ -10,7 +10,7 @@ export default function EmployeeHeader({ status }) {
             </div>
             <div className='search-header__block'>
                 <input className='search-header__input' placeholder='Поиск сотрудника'></input>
-                <img className='search-header__img' src={search}></img>
+                <img className='search-header__img' src={search} alt='' ></img>
             </div>
         </div>
         </>

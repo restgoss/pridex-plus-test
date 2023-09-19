@@ -44,3 +44,9 @@
     cursor: default;
     opacity: 1;
 }
+
+@media screen and (max-width: 550px) {
+    .page-switch {
+        font-size: 14px;
+    }
+}

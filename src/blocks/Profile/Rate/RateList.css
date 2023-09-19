@@ -1,5 +1,11 @@
 .rate-list {
     width: calc(100% - 45px);
     overflow: auto;
-    max-height: 550px;
+}
+
+@media screen and (max-width: 420px) {
+    .rate-list {
+        width: calc(100% - 20px);
+        overflow: hidden;
+    }
 }

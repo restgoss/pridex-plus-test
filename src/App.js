@@ -2,24 +2,24 @@ import './App.css';
 import React from 'react';
 import Auth from './blocks/Auth/Auth';
 import Header from './blocks/Header/Header';
-import Menu from './blocks/Menu/Menu';
 import Profile from './blocks/Profile/Profile';
-import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
+import { Routes, Route, Navigate, useNavigate, useLocation } from "react-router-dom";
 import Result from './blocks/Result/Result';
 import Quiz from './blocks/Quiz/Quiz';
 import EmployeeSearch from './pages/EmployeeSearch';
 function App() {
   const [isLoggedin, setLoggedin] = React.useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   function submitForm(e) {
     setLoggedin(true);
     navigate('/profile');
-    console.log(isLoggedin);
   }
-
+  
+  
   return (
     <div className="App">
-      <Routes>
+      <Routes location={location}>
         <Route
           path='/sign-in'
           element={

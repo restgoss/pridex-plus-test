@@ -1,11 +1,7 @@
 import './Auth.css';
 import password from '../../utils/images/password.svg';
 import phone_icon from '../../utils/images/phone_icon.svg';
-
 export default function Auth(props) {
-
-
-
     return (
         <>
             <div className='auth-block circe'>
@@ -17,7 +13,7 @@ export default function Auth(props) {
                         </input>
                     </div>
                     <div className="auth-form__row">
-                        <img className="auth-form__symbol" src={password} style={{opacity: '.5'}}></img>
+                        <img className="auth-form__symbol" src={password} style={{ opacity: '.5' }}></img>
                         <input className="auth-form__input" placeholder="Пароль">
                         </input>
                     </div>
