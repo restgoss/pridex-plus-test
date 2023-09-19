@@ -8,14 +8,14 @@ export default function EmployeeSearch() {
     function goBack() {
         navigate('/profile')
     }
-    return(
+    return (
         <>
-        <div className='employee__search'>
-            <EmployeeHeader status={'3 квартал 2023 года'} />
-            <Table />
-            <PageSwitch />
-        </div>
-        <div className='employee_exit-button' onClick={goBack}>Назад</div>
+            <div className='employee__search'>
+                <EmployeeHeader status={'3 квартал 2023 года'} />
+                <Table />
+                <PageSwitch />
+            </div>
+            <div className='employee_exit-button' onClick={goBack}>Назад</div>
         </>
     )
 }

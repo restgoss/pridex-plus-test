@@ -8,8 +8,11 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Result from './blocks/Result/Result';
 import Quiz from './blocks/Quiz/Quiz';
 import EmployeeSearch from './pages/EmployeeSearch';
+import EmployeeProfile from './pages/EmployeeProfile';
 function App() {
   const [isLoggedin, setLoggedin] = React.useState(false);
+  const [currentEmployee, setCurrentEmployee] = React.useState({});
+  const [selectedProfile, setSelectedProfile] = React.useState({});
   const navigate = useNavigate();
   function submitForm(e) {
     setLoggedin(true);
@@ -42,12 +45,12 @@ function App() {
     )
   }
 
-  const ProfilePage = (props) => {
+  const ProfilePage = ({ setCurrentEmployee }) => {
     return (
       <>
         <Header isLoggedin={true} />
         <PageTransition>
-          <Profile />
+          <Profile onRateItemClick={setSelectedProfile} />
         </PageTransition>
       </>
     )
@@ -56,10 +59,10 @@ function App() {
   const YourScorePage = (props) => {
     return (
       <>
-      <Header isLoggedin={true} />
-      <PageTransition>
-        <Result />
-      </PageTransition>
+        <Header isLoggedin={true} />
+        <PageTransition>
+          <Result />
+        </PageTransition>
       </>
     )
   }
@@ -67,10 +70,10 @@ function App() {
   const QuizPage = (props) => {
     return (
       <>
-      <Header isLoggedin={true} />
-      <PageTransition>
-        <Quiz />
-      </PageTransition>
+        <Header isLoggedin={true} />
+        <PageTransition>
+          <Quiz />
+        </PageTransition>
       </>
     )
   }
@@ -78,10 +81,21 @@ function App() {
   const SearchPage = (props) => {
     return (
       <>
-      <Header isLoggedin={true} />
-      <PageTransition>
-        <EmployeeSearch />
-      </PageTransition>
+        <Header isLoggedin={true} />
+        <PageTransition>
+          <EmployeeSearch />
+        </PageTransition>
+      </>
+    )
+  }
+
+  const EmployeeProfilePage = (props) => {
+    return (
+      <>
+        <Header isLoggedin={true} />
+        <PageTransition>
+          <EmployeeProfile user={selectedProfile} />
+        </PageTransition>
       </>
     )
   }
@@ -93,7 +107,7 @@ function App() {
         <div className="App">
           <Routes location={location}>
             <Route path='/sign-in' element={<AuthPage />} />
-            <Route path='/profile' element={<ProfilePage />} />
+            <Route path='/profile' element={<ProfilePage setCurrentEmployee={setCurrentEmployee} />} />
             <Route path="*" element={<Navigate to={isLoggedin ? "/profile" : "/sign-in"} />} />
             <Route
               path='/your-score/1'
@@ -101,6 +115,7 @@ function App() {
             />
             <Route path='/quiz' element={<QuizPage />} />
             <Route path='/employee-search' element={<SearchPage />} />
+            <Route path='/employee-profile' element={<EmployeeProfilePage />} />
           </Routes>
         </div>
       </AnimatePresence>

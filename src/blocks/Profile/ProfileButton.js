@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import './ProfileButton.css';
 
 
-export default function ProfileButton() {
+export default function ProfileButton({button}) {
     const navigate = useNavigate();
     function toQuiz() {
         navigate('/quiz');
@@ -10,7 +10,7 @@ export default function ProfileButton() {
     return (
         <div className='button' onClick={toQuiz}>
             <div className='button__alert'>!</div>
-            К анкете
+            {button}
         </div>
     )
 }
