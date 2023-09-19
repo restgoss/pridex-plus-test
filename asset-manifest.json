@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/pridex-plus-test/static/css/main.3bc5578f.css",
-    "main.js": "/pridex-plus-test/static/js/main.e14fcbc2.js",
+    "main.css": "/pridex-plus-test/static/css/main.e73c1779.css",
+    "main.js": "/pridex-plus-test/static/js/main.66edafe2.js",
     "static/media/Circe-Light.woff": "/pridex-plus-test/static/media/Circe-Light.0a23696bc00e1131f434.woff",
     "static/media/Circe-Bold.woff": "/pridex-plus-test/static/media/Circe-Bold.8a1c4d2d35cdd2d6704b.woff",
     "static/media/Circe-Regular.woff": "/pridex-plus-test/static/media/Circe-Regular.b3583e41e063203a7e74.woff",
-    "static/media/avatar_director.jpg": "/pridex-plus-test/static/media/avatar_director.17003aeb88e24c1b86ee.jpg",
     "static/media/pridex_black.svg": "/pridex-plus-test/static/media/pridex_black.a1ceef361e5e5b75bce94a132a2c2858.svg",
     "static/media/phone_icon.svg": "/pridex-plus-test/static/media/phone_icon.49b92d46e05ce7a79592a0065f1b009e.svg",
     "static/media/arrow_left.svg": "/pridex-plus-test/static/media/arrow_left.3758437bd87ff63cf19df94b51a5a288.svg",
@@ -18,11 +17,11 @@
     "static/media/cross.svg": "/pridex-plus-test/static/media/cross.3d5ccb3c06264dd8a878a5a42f52d09e.svg",
     "static/media/menu_button_active.svg": "/pridex-plus-test/static/media/menu_button_active.07f150a0318afec6584e.svg",
     "static/media/menu_button.svg": "/pridex-plus-test/static/media/menu_button.1cd6a4ad6f766233e757.svg",
-    "main.3bc5578f.css.map": "/pridex-plus-test/static/css/main.3bc5578f.css.map",
-    "main.e14fcbc2.js.map": "/pridex-plus-test/static/js/main.e14fcbc2.js.map"
+    "main.e73c1779.css.map": "/pridex-plus-test/static/css/main.e73c1779.css.map",
+    "main.66edafe2.js.map": "/pridex-plus-test/static/js/main.66edafe2.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bc5578f.css",
-    "static/js/main.e14fcbc2.js"
+    "static/css/main.e73c1779.css",
+    "static/js/main.66edafe2.js"
   ]
 }
