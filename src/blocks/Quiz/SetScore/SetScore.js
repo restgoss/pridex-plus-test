@@ -7,6 +7,7 @@ export default function SetScore({setParentState}) {
   const setButtonActive = (buttonId) => {
     if (selectedButton === buttonId) {
       setSelectedButton('');
+      setParentState('');
     } else {
       setSelectedButton(buttonId);
       setParentState(buttonId);

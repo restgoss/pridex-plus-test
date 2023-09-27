@@ -1,0 +1,18 @@
+.hint-block {
+    width: calc(100% - 50px);
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 20px 0 20px 0;
+    margin-top: 15px;
+}
+
+.hint__paragraph {
+    width: 80%;
+    margin-right: 10px;
+    text-align: left;
+    font-family: inherit;
+    font-size: 16px;
+}

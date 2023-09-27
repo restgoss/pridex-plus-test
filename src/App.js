@@ -9,6 +9,7 @@ import Result from './blocks/Result/Result';
 import Quiz from './blocks/Quiz/Quiz';
 import EmployeeSearch from './pages/EmployeeSearch';
 import EmployeeProfile from './pages/EmployeeProfile';
+import QuizSuccess from './pages/QuizSuccess';
 function App() {
   const [isLoggedin, setLoggedin] = React.useState(false);
   const [currentEmployee, setCurrentEmployee] = React.useState({});
@@ -27,7 +28,7 @@ function App() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', height: '100%', ease: 'easeInOut' }}
-        transition={{ type: 'spring', duration: .6 }}
+        transition={{ type: 'spring', duration: .9 }}
       >
         {props.children}
       </motion.div>
@@ -100,6 +101,17 @@ function App() {
     )
   }
 
+  const QuizSuccessPage = (props) => {
+    return(
+      <>
+      <Header isLoggedin={true} />
+      <PageTransition>
+        <QuizSuccess />
+      </PageTransition>
+      </>
+    )
+  }
+
   const AnimatedRoutes = () => {
     const location = useLocation();
     return (
@@ -116,6 +128,7 @@ function App() {
             <Route path='/quiz' element={<QuizPage />} />
             <Route path='/employee-search' element={<SearchPage />} />
             <Route path='/employee-profile' element={<EmployeeProfilePage />} />
+            <Route path='/quiz-success' element={<QuizSuccessPage />} />
           </Routes>
         </div>
       </AnimatePresence>
